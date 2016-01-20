@@ -5,6 +5,6 @@ defmodule Exyelp.Search do
     body
     |> Poison.decode!
     |> Enum.map(fn({k, v}) -> {String.to_atom(k), v} end)
-    |> Enum.into %{}
+    |> Enum.into(%{})
   end
 end

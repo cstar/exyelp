@@ -31,7 +31,7 @@ defmodule Exyelp.Mixfile do
   defp deps do
     [
       {:exvcr, "~> 0.3", only: [:dev, :test]},
-      {:oauther, ">= 1.0.2"},
+      {:oauther, github: "gaslight/oauther"},
       {:httpoison, ">= 0.0.1"},
       {:poison, ">= 0.0.1"}
     ]
